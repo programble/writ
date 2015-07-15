@@ -1,0 +1,26 @@
+{
+  "name": "writ",
+  "version": "0.0.0",
+  "description": "Simple CSS for simple writing",
+  "private": true,
+  "scripts": {
+    "minify": "cleancss -o writ.min.css writ.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/programble/writ.git"
+  },
+  "keywords": [
+    "css",
+    "html"
+  ],
+  "author": "Curtis McEnroe <curtis@cmcenroe.me> (https://cmcenroe.me)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/programble/writ/issues"
+  },
+  "homepage": "https://github.com/programble/writ#readme",
+  "devDependencies": {
+    "clean-css": "^3.3.6"
+  }
+}
