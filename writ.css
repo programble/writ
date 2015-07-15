@@ -16,3 +16,18 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  *
  */
+
+/* Fonts & Colors: fonts chosen from http://www.cssfontstack.com */
+
+body {
+  font-family: Palatino, Georgia, Lucida Bright, Book Antiqua, serif;
+  font-size: 14px;
+  line-height: 1.5em;
+
+  color: #333;
+}
+
+code, pre, samp, kbd {
+  font-family: Courier New, Courier, monospace;
+  line-height: 1em;
+}
