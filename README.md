@@ -7,21 +7,41 @@ and no extra `div`.
 
 ## The Problem
 
-Description
+It's pretty easy to start writing something in HTML, especially with HTML 5:
 
-Example HTML
+```html
+<!DOCTYPE html>
+<title>Hello, World!</title>
+<meta charset="utf-8">
 
-Screenshot
+<h1>Writ</h1>
+<p>Simple CSS for simple writing.</p>
+```
+
+This is what it looks like:
+
+![Default styles](screenshot/default.png)
+
+Not too bad, but it really starts to be inadequate with more content and
+various elements.
+
+[eventual screenshot of reference page with default styles]
 
 ## A Solution
 
-Description
+By adding the Writ stylesheet, the same HTML can look a lot better:
 
-Screenshot
+```html
+<link rel="stylesheet" href="https://cmcenroe.me/writ/writ.min.css">
+```
+
+![Writ styles](screenshot/writ.png)
 
 ## Caveats
 
-Compatibility
+Writ is designed for modern, standards compliant browsers only. There are no
+compatibility hacks. Writ is tested on the latest stable releases of Safari,
+Chrome and Firefox.
 
 ## License
 
