@@ -105,6 +105,15 @@ h4 { font-size: 125%; }
 h5 { font-size: 110%; }
 h6 { font-size: 105%; }
 
+a {
+  text-decoration: none;
+  color: #00e;
+}
+
+a:visited {
+  color: #80b;
+}
+
 hr { border: none; }
 
 ul li { list-style-type: disc; }
