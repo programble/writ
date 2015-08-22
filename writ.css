@@ -119,6 +119,12 @@ strong { font-weight: bold; }
 
 u { text-decoration: underline; }
 
+mark {
+  color: inherit;
+  background-color: #fe0;
+  padding: 1px;
+}
+
 del { text-decoration: line-through; }
 
 ins {
@@ -128,6 +134,11 @@ ins {
 }
 
 abbr { font-size: 2ex; }
+
+sup, sub {
+  font-size: 0.75em;
+  line-height: 1em;
+}
 
 var { font-style: italic; }
 
