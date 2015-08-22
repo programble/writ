@@ -32,6 +32,8 @@ code, pre, samp, kbd {
   line-height: 1em;
 }
 
+kbd { font-weight: bold; }
+
 /* Page layout boxes */
 
 body { margin: 0; }
