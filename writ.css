@@ -119,6 +119,14 @@ strong { font-weight: bold; }
 
 u { text-decoration: underline; }
 
+del { text-decoration: line-through; }
+
+ins {
+  text-decoration: none;
+  padding: 1px;
+  border: solid 1px #eee;
+}
+
 abbr { font-size: 2ex; }
 
 var { font-style: italic; }
