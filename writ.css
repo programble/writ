@@ -41,7 +41,7 @@ body > header { margin: 0 0 3em; }
 body > article {
   max-width: 100ch;
   margin: auto;
-  padding: 0 2ch;
+  padding: 0 2ch 1em;
   position: relative;
 }
 
