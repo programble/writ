@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "minify": "cleancss -o writ.min.css writ.css",
-    "readme": "marked --gfm --no-mangle README.md | cat index.head.html - index.tail.html > index.html",
+    "readme": "tail -n +5 README.md | marked --gfm --no-mangle | cat index.head.html - index.tail.html > index.html",
     "watch": "nodemon -e css,md -i writ.min.css -x 'npm run minify && npm run readme'"
   },
   "repository": {

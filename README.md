@@ -1,41 +1,6 @@
 # Writ
 
-Simple CSS for simple writing.
-
-Writ provides simple, elegant styles for HTML 5 semantic elements. No classes,
-and no extra `div`.
-
-## The Problem
-
-It's pretty easy to start writing something in HTML, especially with HTML 5:
-
-```html
-<!DOCTYPE html>
-<title>Hello, World!</title>
-<meta charset="utf-8">
-
-<h1>Writ</h1>
-<p>Simple CSS for simple writing.</p>
-```
-
-This is what it looks like:
-
-![Default styles](screenshot/default.png)
-
-Not too bad, but it really starts to be inadequate with more content and
-various elements.
-
-[eventual screenshot of reference page with default styles]
-
-## A Solution
-
-By adding the Writ stylesheet, the same HTML can look a lot better:
-
-```html
-<link rel="stylesheet" href="https://cmcenroe.me/writ/writ.min.css">
-```
-
-![Writ styles](screenshot/writ.png)
+Opinionated, classless styles for semantic HTML.
 
 ## Caveats
 
