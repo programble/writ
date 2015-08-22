@@ -82,6 +82,8 @@ hr { margin: 1.5em 0 0; }
 
 ul, ol, dd { padding: 0 0 0 3ch; }
 
+dd { margin: 0; }
+
 ul ul, ol ol { margin-top: 0; }
 
 blockquote {
