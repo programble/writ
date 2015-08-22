@@ -41,7 +41,8 @@ body > header { margin: 0 0 3em; }
 body > article {
   max-width: 100ch;
   margin: auto;
-  padding: 0 1ch;
+  padding: 0 2ch;
+  position: relative;
 }
 
 nav ul { padding: 0; }
@@ -50,11 +51,23 @@ nav ul li {
   padding-left: 1ch;
 }
 
+body > article aside {
+  position: absolute;
+  left: 100%;
+  width: 25ch;
+  padding: 0 1ch;
+}
+
 /* Page layout visual */
 
 body > header { text-align: center; }
 
 nav ul { list-style-type: none; }
+
+body > article aside {
+  margin-left: -1ch;
+  border-left: solid 0.5ch #eee;
+}
 
 /* Copy boxes */
 
