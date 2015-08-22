@@ -87,11 +87,6 @@ blockquote {
   padding: 0 0 0 1ch;
 }
 
-blockquote cite {
-  display: block;
-  margin: 0.5em 0;
-}
-
 pre { padding: 0.25em 0.5ch; }
 
 /* Copy visual */
@@ -125,9 +120,6 @@ ol li li { list-style-type: lower-roman; }
 ol li li li { list-style-type: lower-alpha; }
 
 blockquote { border-left: solid 0.5ch #eee; }
-
-blockquote cite { font-style: italic; }
-blockquote cite:before { content: '\2014'; }
 
 address { font-style: normal; }
 
