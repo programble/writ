@@ -113,9 +113,17 @@ a:visited {
   color: #60b;
 }
 
-abbr {
-  font-size: 2ex;
-}
+em { font-style: italic; }
+
+strong { font-weight: bold; }
+
+u { text-decoration: underline; }
+
+abbr { font-size: 2ex; }
+
+var { font-style: italic; }
+
+pre, code, samp { background-color: #eee; }
 
 hr { border: none; }
 
@@ -128,5 +136,3 @@ ol li li { list-style-type: lower-roman; }
 ol li li li { list-style-type: lower-alpha; }
 
 blockquote { border-left: solid 0.5ch #eee; }
-
-pre, code, samp { background-color: #eee; }
