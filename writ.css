@@ -31,3 +31,82 @@ code, pre, samp, kbd {
   font-family: Courier New, Courier, monospace;
   line-height: 1em;
 }
+
+/* Page layout boxes */
+
+body { margin: 0; }
+
+body > header { margin: 0 0 3em; }
+
+body > article {
+  max-width: 100ch;
+  margin: auto;
+  padding: 0 1ch;
+}
+
+nav ul { padding: 0; }
+nav ul li {
+  display: inline;
+  padding-left: 1ch;
+}
+
+/* Page layout visual */
+
+body > header { text-align: center; }
+
+nav ul { list-style-type: none; }
+
+/* Copy boxes */
+
+h1, h2, h3, h4, h5, h6 { margin: 1em 0 0.5em; }
+
+p, ul, ol, dl, blockquote, pre { margin: 0.5em 0 0; }
+
+hr { margin: 1.5em 0 0; }
+
+ul, ol, dd { padding: 0 0 0 3ch; }
+
+ul ul, ol ol { margin-top: 0; }
+
+blockquote {
+  margin-left: 1.5ch;
+  margin-right: 3ch;
+  padding: 0 0 0 1ch;
+}
+
+blockquote cite {
+  display: block;
+  margin: 0.5em 0;
+}
+
+pre { padding: 0.25em 0.5ch; }
+
+/* Copy visual */
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
+h1 { font-size: 250%; }
+h2 { font-size: 200%; }
+h3 { font-size: 150%; }
+h4 { font-size: 125%; }
+h5 { font-size: 110%; }
+h6 { font-size: 105%; }
+
+hr { border: none; }
+
+ul li { list-style-type: disc; }
+ul li li { list-style-type: circle; }
+ul li li li { list-style-type: square; }
+
+ol li { list-style-type: decimal; }
+ol li li { list-style-type: lower-roman; }
+ol li li li { list-style-type: lower-alpha; }
+
+blockquote { border-left: solid 0.5ch #eee; }
+
+blockquote cite { font-style: italic; }
+blockquote cite:before { content: '\2014'; }
+
+address { font-style: normal; }
+
+pre { background-color: #eee; }
