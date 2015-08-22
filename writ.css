@@ -113,6 +113,10 @@ a:visited {
   color: #60b;
 }
 
+abbr {
+  font-size: 2ex;
+}
+
 hr { border: none; }
 
 ul li { list-style-type: disc; }
