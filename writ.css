@@ -92,7 +92,10 @@ blockquote {
   padding: 0 0 0 1ch;
 }
 
-pre { padding: 0.25em 0.5ch; }
+pre {
+  padding: 0.25em 0.5ch;
+  overflow-x: scroll;
+}
 
 code, samp { padding: 1px; }
 
