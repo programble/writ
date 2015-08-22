@@ -89,6 +89,8 @@ blockquote {
 
 pre { padding: 0.25em 0.5ch; }
 
+code, samp { padding: 1px; }
+
 /* Copy visual */
 
 h1, h2, h3, h4, h5, h6 { font-weight: normal; }
@@ -121,4 +123,4 @@ ol li li li { list-style-type: lower-alpha; }
 
 blockquote { border-left: solid 0.5ch #eee; }
 
-pre { background-color: #eee; }
+pre, code, samp { background-color: #eee; }
