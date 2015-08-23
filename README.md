@@ -2,6 +2,26 @@
 
 Opinionated, classless styles for semantic HTML.
 
+## Goals
+
+- Drop-in stylesheet
+  - No classes
+  - No extra elements
+- Responsive, without special-casing
+- Visually pleasing
+
+## Motivation
+
+<abbr>HTML</abbr> is super easy to write. Markdown is even easier to write and
+generate <abbr>HTML</abbr> from. But what does it look like?
+
+![Default Styles](screenshot/default.png)
+
+Not very nice, and it gets worse the more there is. Applying the Writ
+stylesheet makes it better.
+
+![Writ Styles](screenshot/writ.png)
+
 ## Caveats
 
 Writ is designed for modern, standards compliant browsers only. There are no
