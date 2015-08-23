@@ -27,16 +27,16 @@ body {
   color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 { line-height: 1.25em; }
-
 code, pre, samp, kbd {
   font-family: Courier New, Courier, monospace;
+
+  /* Monospace text should be tight */
   line-height: 1em;
 }
 
 kbd { font-weight: bold; }
 
-/* Page layout boxes */
+/* Layout */
 
 body { margin: 0; }
 
@@ -46,21 +46,8 @@ body > article {
   max-width: 100ch;
   margin: auto;
   padding: 0 2ch 1em;
+  /* For aside */
   position: relative;
-}
-
-nav ul { padding: 0; }
-nav ul li {
-  display: inline;
-  padding-left: 1ch;
-}
-
-body > article aside {
-  position: absolute;
-  left: 100%;
-  width: 25ch;
-  margin-top: 0.5em;
-  padding: 0 1ch;
 }
 
 body > article figure {
@@ -68,52 +55,37 @@ body > article figure {
   margin: 0 0 0.5em 2ch;
 }
 
-/* Page layout visual */
+body > article aside {
+  position: absolute;
+  left: 100%;
+  width: 25ch;
+  padding: 0 1ch;
+  /* To align with p */
+  margin-top: 0.5em;
+}
+
+/* Layout Visual */
 
 body > header { text-align: center; }
 
-nav ul { list-style-type: none; }
-
 body > article aside {
+  /* To get border on screen when aside is off */
   margin-left: -1ch;
   border-left: solid 0.5ch #eee;
 }
 
-/* Copy boxes */
+/* Copy Vertical Spacing */
 
 h1, h2, h3, h4, h5, h6 { margin: 1em 0 0.5em; }
 
 p, ul, ol, dl, table, blockquote, pre { margin: 0.5em 0 0; }
 
-hr { margin: 1.5em 0 0; }
-
-ul, ol, dd { padding: 0 0 0 3ch; }
-
-dd { margin: 0; }
-
 ul ul, ol ol { margin-top: 0; }
 
-table {
-  width: 100%;
-  overflow-x: scroll;
-}
+/* With p margin, like a skipped line */
+hr { margin: 1.5em 0 0; }
 
-th, td { padding: 0.25em 0.5ch; }
-
-blockquote {
-  margin-left: 1.5ch;
-  margin-right: 3ch;
-  padding: 0 0 0 1ch;
-}
-
-pre {
-  padding: 0.25em 0.5ch;
-  overflow-x: scroll;
-}
-
-code, samp { padding: 1px; }
-
-/* Copy visual */
+/* Headings */
 
 h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 
@@ -124,47 +96,32 @@ h4 { font-size: 125%; }
 h5 { font-size: 110%; }
 h6 { font-size: 105%; }
 
-a {
-  text-decoration: none;
-  color: #00e;
+/* Copy Blocks */
+
+hr {
+  border: none;
 }
 
-a:visited {
-  color: #60b;
+blockquote {
+  margin-right: 3ch;
+
+  margin-left: 1.5ch;
+  border-left: solid 0.5ch #eee;
+  padding: 0 0 0 1ch;
 }
 
-em { font-style: italic; }
+pre {
+  padding: 0.25em 0.5ch;
+  overflow-x: scroll;
 
-strong { font-weight: bold; }
-
-u { text-decoration: underline; }
-
-mark {
-  color: inherit;
-  background-color: #fe0;
-  padding: 1px;
+  background-color: #eee;
 }
 
-del { text-decoration: line-through; }
+/* Lists */
 
-ins {
-  text-decoration: none;
-  padding: 1px;
-  border: solid 1px #eee;
-}
+ul, ol, dd { padding: 0 0 0 3ch; }
 
-abbr { font-size: 2ex; }
-
-sup, sub {
-  font-size: 0.75em;
-  line-height: 1em;
-}
-
-var { font-style: italic; }
-
-pre, code, samp { background-color: #eee; }
-
-hr { border: none; }
+dd { margin: 0; }
 
 ul li { list-style-type: disc; }
 ul li li { list-style-type: circle; }
@@ -174,19 +131,72 @@ ol li { list-style-type: decimal; }
 ol li li { list-style-type: lower-roman; }
 ol li li li { list-style-type: lower-alpha; }
 
-table { border-collapse: collapse; }
+nav ul {
+  padding: 0;
+  list-style-type: none;
+}
 
-th, td { border: solid 1px #eee; }
+nav ul li {
+  display: inline;
+  padding-left: 1ch;
+}
+
+/* Tables */
+
+table {
+  width: 100%;
+  overflow-x: scroll;
+
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.25em 0.5ch;
+  border: solid 1px #eee;
+}
 
 thead, tfoot {
   background-color: #eee;
   border: solid 1px #eee;
 }
 
+/* Internal lines white */
 thead th, thead td, tfoot th, tfoot td { border-right: solid 1px #fff; }
-
 thead th:last-child, thead td:last-child, tfoot th:last-child, tfoot td:last-child {
   border-right: inherit;
 }
 
-blockquote { border-left: solid 0.5ch #eee; }
+/* Copy Inline */
+
+a {
+  text-decoration: none;
+  color: #00e;
+}
+
+a:visited { color: #60b; }
+
+/* Smallcaps */
+abbr { font-size: 2ex; }
+
+sup, sub {
+  font-size: 0.75em;
+  /* To not mess up line spacing */
+  line-height: 1em;
+}
+
+ins {
+  text-decoration: none;
+  padding: 1px;
+  border: solid 1px #eee;
+}
+
+code, samp {
+  padding: 1px;
+  background-color: #eee;
+}
+
+mark {
+  padding: 1px;
+  background-color: #fe0;
+  color: inherit;
+}
