@@ -83,7 +83,7 @@ body > article aside {
 
 h1, h2, h3, h4, h5, h6 { margin: 1em 0 0.5em; }
 
-p, ul, ol, dl, blockquote, pre { margin: 0.5em 0 0; }
+p, ul, ol, dl, table, blockquote, pre { margin: 0.5em 0 0; }
 
 hr { margin: 1.5em 0 0; }
 
