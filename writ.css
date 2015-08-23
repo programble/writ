@@ -120,6 +120,8 @@ pre {
   background-color: #eee;
 }
 
+img { max-width: 100%; }
+
 /* Lists */
 
 ul, ol, dd { padding: 0 0 0 3ch; }
