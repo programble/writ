@@ -61,6 +61,11 @@ body > article aside {
   padding: 0 1ch;
 }
 
+body > article figure {
+  float: right;
+  margin: 0 0 0.5em 2ch;
+}
+
 /* Page layout visual */
 
 body > header { text-align: center; }
