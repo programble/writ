@@ -27,6 +27,9 @@ body {
   color: #333;
 }
 
+/* Wrapped headings should be slightly tighter */
+h1, h2, h3, h4, h5, h6 { line-height: 1.25em; }
+
 code, pre, samp, kbd {
   font-family: Courier New, Courier, monospace;
 
@@ -76,7 +79,7 @@ body > article aside {
 
 /* Copy Vertical Spacing */
 
-h1, h2, h3, h4, h5, h6 { margin: 1em 0 0.5em; }
+h1, h2, h3, h4, h5, h6 { margin: 0.75em 0 0; }
 
 p, ul, ol, dl, table, blockquote, pre { margin: 0.5em 0 0; }
 
