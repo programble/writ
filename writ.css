@@ -93,6 +93,13 @@ dd { margin: 0; }
 
 ul ul, ol ol { margin-top: 0; }
 
+table {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+th, td { padding: 0.25em 0.5ch; }
+
 blockquote {
   margin-left: 1.5ch;
   margin-right: 3ch;
@@ -166,5 +173,20 @@ ul li li li { list-style-type: square; }
 ol li { list-style-type: decimal; }
 ol li li { list-style-type: lower-roman; }
 ol li li li { list-style-type: lower-alpha; }
+
+table { border-collapse: collapse; }
+
+th, td { border: solid 1px #eee; }
+
+thead, tfoot {
+  background-color: #eee;
+  border: solid 1px #eee;
+}
+
+thead th, thead td, tfoot th, tfoot td { border-right: solid 1px #fff; }
+
+thead th:last-child, thead td:last-child, tfoot th:last-child, tfoot td:last-child {
+  border-right: inherit;
+}
 
 blockquote { border-left: solid 0.5ch #eee; }
