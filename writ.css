@@ -180,6 +180,9 @@ a {
 
 a:visited { color: #60b; }
 
+/* Don't color visited nav links */
+nav a:visited { color: #00e; }
+
 /* Smallcaps */
 abbr { font-size: 2ex; }
 
