@@ -166,19 +166,12 @@ table {
 }
 
 th, td {
-  padding: 0.25em 0.5ch;
-  border: solid 1px #eee;
+  padding: 3px;
+  border: solid 1px #ddd;
 }
 
 thead, tfoot {
   background-color: #eee;
-  border: solid 1px #eee;
-}
-
-/* Internal lines white */
-thead th, thead td, tfoot th, tfoot td { border-right: solid 1px #fff; }
-thead th:last-child, thead td:last-child, tfoot th:last-child, tfoot td:last-child {
-  border-right: inherit;
 }
 
 /* Copy Inline */
