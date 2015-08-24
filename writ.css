@@ -33,9 +33,6 @@ h1, h2, h3, h4, h5, h6 { line-height: 1.25em; }
 code, pre, samp, kbd {
   font-family: Consolas, Liberation Mono, Menlo, Courier, monospace;
   color: #111;
-
-  /* Monospace text should be tight */
-  line-height: 1.15em;
 }
 
 kbd { font-weight: bold; }
@@ -117,10 +114,20 @@ blockquote {
 }
 
 pre {
-  padding: 0.25em 0.5ch;
-  overflow-x: auto;
-
+  padding: 5px;
   background-color: #eee;
+  border: solid 1px #ddd;
+  border-radius: 2px;
+  font-size: 0.85em;
+
+  overflow-x: auto;
+}
+pre code {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-size: inherit;
+  white-space: inherit;
 }
 
 img { max-width: 100%; }
@@ -202,8 +209,13 @@ ins {
 }
 
 code, samp {
-  padding: 1px;
+  padding: 0.1em 0.2em;
   background-color: #eee;
+  border: solid 1px #ddd;
+  border-radius: 2px;
+  font-size: 0.85em;
+
+  white-space: nowrap;
 }
 
 mark {
