@@ -22,10 +22,10 @@
 body {
   font-family: Palatino, Georgia, Lucida Bright, Book Antiqua, serif;
   font-size: 14px;
-  line-height: 1.5em;
-
   color: #333;
 }
+
+* { line-height: 1.5em; }
 
 /* Wrapped headings should be slightly tighter */
 h1, h2, h3, h4, h5, h6 { line-height: 1.25em; }
