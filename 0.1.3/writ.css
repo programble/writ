@@ -1,0 +1,211 @@
+/*!
+ * Writ v0.1.3
+ *
+ * Copyright © 2015, Curtis McEnroe <curtis@cmcenroe.me>
+ *
+ * Permission to use, copy, modify, and/or distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ *
+ */
+
+/* Fonts & Colors: fonts chosen from http://www.cssfontstack.com */
+
+body {
+  font-family: Palatino, Georgia, Lucida Bright, Book Antiqua, serif;
+  font-size: 14px;
+  color: #222;
+}
+
+* { line-height: 1.5em; }
+
+/* Wrapped headings should be slightly tighter */
+h1, h2, h3, h4, h5, h6 { line-height: 1.25em; }
+
+code, pre, samp, kbd {
+  font-family: Courier New, Courier, monospace;
+  color: #111;
+
+  /* Monospace text should be tight */
+  line-height: 1em;
+}
+
+kbd { font-weight: bold; }
+
+/* Layout */
+
+body { margin: 0; }
+
+body > header { margin: 0 0 3em; }
+
+body > article {
+  max-width: 100ch;
+  margin: auto;
+  padding: 0 2ch 1em;
+  /* For aside */
+  position: relative;
+}
+
+body > article figure {
+  float: right;
+  margin: 0 0 0.5em 2ch;
+}
+
+body > article aside {
+  position: absolute;
+  left: 100%;
+  width: 25ch;
+  padding: 0 1ch;
+  /* To align with p */
+  margin-top: 0.5em;
+}
+
+/* Layout Visual */
+
+body > header { text-align: center; }
+
+body > article aside {
+  /* To get border on screen when aside is off */
+  margin-left: -1ch;
+  border-left: solid 0.5ch #eee;
+}
+
+/* Copy Vertical Spacing */
+
+h1, h2, h3, h4, h5, h6 { margin: 0.75em 0 0; }
+
+p, ul, ol, dl, table, blockquote, pre { margin: 0.5em 0 0; }
+
+ul ul, ol ol { margin-top: 0; }
+
+/* With p margin, like a skipped line */
+hr { margin: 1.5em 0 0; }
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
+h1 { font-size: 250%; }
+h2 { font-size: 200%; }
+h3 { font-size: 150%; }
+h4 { font-size: 125%; }
+h5 { font-size: 110%; }
+h6 { font-size: 105%; }
+
+/* Copy Blocks */
+
+hr {
+  border: none;
+}
+
+blockquote {
+  margin-right: 3ch;
+
+  margin-left: 1.5ch;
+  border-left: solid 0.5ch #eee;
+  padding: 0 0 0 1ch;
+}
+
+pre {
+  padding: 0.25em 0.5ch;
+  overflow-x: auto;
+
+  background-color: #eee;
+}
+
+img { max-width: 100%; }
+
+/* Lists */
+
+ul, ol, dd { padding: 0 0 0 3ch; }
+
+dd { margin: 0; }
+
+ul li { list-style-type: disc; }
+ul li li { list-style-type: circle; }
+ul li li li { list-style-type: square; }
+
+ol li { list-style-type: decimal; }
+ol li li { list-style-type: lower-roman; }
+ol li li li { list-style-type: lower-alpha; }
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  padding-left: 1ch;
+}
+
+/* Tables */
+
+table {
+  width: 100%;
+  overflow-x: auto;
+
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.25em 0.5ch;
+  border: solid 1px #eee;
+}
+
+thead, tfoot {
+  background-color: #eee;
+  border: solid 1px #eee;
+}
+
+/* Internal lines white */
+thead th, thead td, tfoot th, tfoot td { border-right: solid 1px #fff; }
+thead th:last-child, thead td:last-child, tfoot th:last-child, tfoot td:last-child {
+  border-right: inherit;
+}
+
+/* Copy Inline */
+
+a {
+  text-decoration: none;
+  color: #00e;
+}
+
+a:visited { color: #60b; }
+
+/* Don't color visited nav links */
+nav a:visited { color: #00e; }
+
+/* Smallcaps */
+abbr { font-size: 2ex; }
+
+sup, sub {
+  font-size: 0.75em;
+  /* To not mess up line spacing */
+  line-height: 1em;
+}
+
+ins {
+  text-decoration: none;
+  padding: 1px;
+  border: solid 1px #eee;
+}
+
+code, samp {
+  padding: 1px;
+  background-color: #eee;
+}
+
+mark {
+  padding: 1px;
+  background-color: #fe0;
+  color: inherit;
+}
