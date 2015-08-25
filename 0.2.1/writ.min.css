@@ -1,0 +1,18 @@
+/*!
+ * Writ v0.2.1
+ *
+ * Copyright © 2015, Curtis McEnroe <curtis@cmcenroe.me>
+ *
+ * Permission to use, copy, modify, and/or distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ *
+ */pre,small{font-size:.85em}pre,table{overflow-x:auto}a,ins{text-decoration:none}body{font-family:Palatino,Georgia,Lucida Bright,Book Antiqua,serif;font-size:14px;color:#222;margin:0}*{line-height:1.5em}code,kbd,pre,samp{font-family:Consolas,Liberation Mono,Menlo,Courier,monospace;color:#111}kbd{font-weight:700}body>header{margin:0 0 3em;text-align:center}body>article{max-width:100ch;margin:auto;padding:0 2ch 1em;position:relative}body>article figure{float:right;margin:0 0 .5em 2ch}body>article aside{position:absolute;left:100%;width:25ch;padding:0 1ch;margin-top:.5em;margin-left:-1ch;border-left:solid .5ch #eee}h1,h2,h3,h4,h5,h6{line-height:1.25em;margin:.75em 0 0;font-weight:400}blockquote,dl,ol,p,pre,table,ul{margin:.5em 0 0}ol ol,ul ul{margin-top:0}hr{margin:1.5em 0 0;border:none}h1{font-size:2.25em}h2{font-size:1.75em}h3{font-size:1.5em}h4{font-size:1.25em}h5{font-size:1.15em}h6{font-size:1em}blockquote{margin-right:3ch;margin-left:1.5ch;border-left:solid .5ch #eee;padding:0 0 0 1ch}pre{padding:5px;background-color:#eee;border:1px solid #ddd;border-radius:2px}pre code{padding:0;border:none;background-color:transparent;font-size:inherit;white-space:inherit}code,samp,td,th{border:1px solid #ddd}code,samp,tfoot,thead{background-color:#eee}img{max-width:100%}dd,ol,ul{padding:0 0 0 3ch}dd{margin:0}ul li{list-style-type:disc}ul li li{list-style-type:circle}ul li li li{list-style-type:square}ol li{list-style-type:decimal}ol li li{list-style-type:lower-roman}ol li li li{list-style-type:lower-alpha}nav ul{padding:0;list-style-type:none}nav ul li{display:inline;padding-left:1ch}ins,mark{padding:1px}table{width:100%;border-collapse:collapse}td,th{padding:3px}a{color:#00e}a:visited{color:#60b}nav a:visited{color:#00e}abbr{font-size:2ex}sub,sup{font-size:.75em;line-height:1em}ins{border:1px solid #eee}code,samp{padding:.1em .2em;border-radius:2px;font-size:.85em;white-space:nowrap}mark{background-color:#fe0;color:inherit}
