@@ -2,6 +2,17 @@
 
 Opinionated, classless styles for semantic HTML.
 
+## Usage
+
+```html
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="//cmcenroe.me/writ/writ.min.css">
+```
+
+Writ is served through the CloudFlare CDN.
+
 ## Goals
 
 - Drop-in stylesheet
