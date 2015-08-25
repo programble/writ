@@ -1,0 +1,30 @@
+{
+  "name": "writ",
+  "version": "0.0.0",
+  "description": "Simple CSS for simple writing",
+  "private": true,
+  "scripts": {
+    "minify": "cleancss -o writ.min.css writ.css",
+    "readme": "tail -n +5 README.md | marked --gfm --no-mangle | cat index.head.html - index.tail.html > index.html",
+    "watch": "nodemon -e css,md -i writ.min.css -x 'npm run minify && npm run readme'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/programble/writ.git"
+  },
+  "keywords": [
+    "css",
+    "html"
+  ],
+  "author": "Curtis McEnroe <curtis@cmcenroe.me> (https://cmcenroe.me)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/programble/writ/issues"
+  },
+  "homepage": "https://github.com/programble/writ#readme",
+  "devDependencies": {
+    "clean-css": "^3.3.6",
+    "marked": "^0.3.5",
+    "nodemon": "^1.3.7"
+  }
+}
