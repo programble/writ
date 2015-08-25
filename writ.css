@@ -1,5 +1,5 @@
 /*!
- * Writ v0.1.3
+ * Writ v0.2.0
  *
  * Copyright © 2015, Curtis McEnroe <curtis@cmcenroe.me>
  *
@@ -31,11 +31,8 @@ body {
 h1, h2, h3, h4, h5, h6 { line-height: 1.25em; }
 
 code, pre, samp, kbd {
-  font-family: Courier New, Courier, monospace;
+  font-family: Consolas, Liberation Mono, Menlo, Courier, monospace;
   color: #111;
-
-  /* Monospace text should be tight */
-  line-height: 1em;
 }
 
 kbd { font-weight: bold; }
@@ -89,16 +86,18 @@ ul ul, ol ol { margin-top: 0; }
 /* With p margin, like a skipped line */
 hr { margin: 1.5em 0 0; }
 
-/* Headings */
+/* Font sizes */
 
 h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 
-h1 { font-size: 250%; }
-h2 { font-size: 200%; }
-h3 { font-size: 150%; }
-h4 { font-size: 125%; }
-h5 { font-size: 110%; }
-h6 { font-size: 105%; }
+h1 { font-size: 2.25em;; }
+h2 { font-size: 1.75em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1.15em; }
+h6 { font-size: 1em; }
+
+small { font-size: 0.85em; }
 
 /* Copy Blocks */
 
@@ -115,10 +114,20 @@ blockquote {
 }
 
 pre {
-  padding: 0.25em 0.5ch;
-  overflow-x: auto;
-
+  padding: 5px;
   background-color: #eee;
+  border: solid 1px #ddd;
+  border-radius: 2px;
+  font-size: 0.85em;
+
+  overflow-x: auto;
+}
+pre code {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-size: inherit;
+  white-space: inherit;
 }
 
 img { max-width: 100%; }
@@ -157,19 +166,12 @@ table {
 }
 
 th, td {
-  padding: 0.25em 0.5ch;
-  border: solid 1px #eee;
+  padding: 3px;
+  border: solid 1px #ddd;
 }
 
 thead, tfoot {
   background-color: #eee;
-  border: solid 1px #eee;
-}
-
-/* Internal lines white */
-thead th, thead td, tfoot th, tfoot td { border-right: solid 1px #fff; }
-thead th:last-child, thead td:last-child, tfoot th:last-child, tfoot td:last-child {
-  border-right: inherit;
 }
 
 /* Copy Inline */
@@ -200,8 +202,13 @@ ins {
 }
 
 code, samp {
-  padding: 1px;
+  padding: 0.1em 0.2em;
   background-color: #eee;
+  border: solid 1px #ddd;
+  border-radius: 2px;
+  font-size: 0.85em;
+
+  white-space: nowrap;
 }
 
 mark {
