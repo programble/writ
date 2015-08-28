@@ -33,7 +33,7 @@ body { margin: 0; }
 body > header { margin: 0 0 3em; }
 
 body > article {
-  max-width: 100ch;
+  max-width: 78ch;
   margin: auto;
   padding: 0 1ch 1em;
   /* For aside */
