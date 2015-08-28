@@ -175,9 +175,6 @@ a:visited { color: #60b; }
 /* Don't color visited nav links */
 nav a:visited { color: #00e; }
 
-/* Smallcaps */
-abbr { font-size: 2ex; }
-
 sup, sub {
   font-size: 0.75em;
   /* To not mess up line spacing */
