@@ -80,14 +80,15 @@ hr { margin: 1.5em 0 0; }
 
 h1, h2, h3, h4, h5, h6 { font-weight: normal; }
 
-h1 { font-size: 2.25em;; }
-h2 { font-size: 1.75em; }
-h3 { font-size: 1.5em; }
-h4 { font-size: 1.25em; }
-h5 { font-size: 1.15em; }
+/* Minor third */
+h1 { font-size: 2.488em; }
+h2 { font-size: 2.074em; }
+h3 { font-size: 1.728em; }
+h4 { font-size: 1.44em; }
+h5 { font-size: 1.2em; }
 h6 { font-size: 1em; }
 
-small { font-size: 0.85em; }
+small { font-size: 0.833em; }
 
 /* Copy Blocks */
 
@@ -108,7 +109,7 @@ pre {
   background-color: #eee;
   border: solid 1px #ddd;
   border-radius: 2px;
-  font-size: 0.85em;
+  font-size: 0.833em;
 
   overflow-x: auto;
 }
@@ -193,7 +194,7 @@ code, samp {
   background-color: #eee;
   border: solid 1px #ddd;
   border-radius: 2px;
-  font-size: 0.85em;
+  font-size: 0.833em;
 
   white-space: nowrap;
 }
