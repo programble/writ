@@ -28,27 +28,28 @@ kbd { font-weight: bold; }
 
 /* Layout */
 
-body { margin: 0; }
+body { margin: 0 1ch 1em; }
 
-body > header { margin: 0 0 3em; }
+body > header { margin: 0 1ch 3em; }
 
-body > article {
+body > main {
+  /* Just in case */
+  display: block;
   max-width: 78ch;
   margin: auto;
-  padding: 0 1ch 1em;
   /* For aside */
   position: relative;
 }
 
-body > article figure {
+body > main figure {
   float: right;
-  margin: 0 0 0.5em 2ch;
+  margin: 0 0 0 1ch;
 }
 
-body > article aside {
+body > main aside {
   position: absolute;
   left: 100%;
-  width: 25ch;
+  width: 26ch;
   padding: 0 1ch;
   /* To align with p */
   margin-top: 0.5em;
@@ -58,7 +59,7 @@ body > article aside {
 
 body > header { text-align: center; }
 
-body > article aside {
+body > main aside {
   /* To get border on screen when aside is off */
   margin-left: -1ch;
   border-left: solid 0.5ch #eee;
