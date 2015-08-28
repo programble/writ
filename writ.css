@@ -10,7 +10,7 @@
 
 body {
   font-family: Palatino, Georgia, Lucida Bright, Book Antiqua, serif;
-  font-size: 14px;
+  font-size: 12pt;
   color: #222;
 }
 
@@ -35,7 +35,7 @@ body > header { margin: 0 0 3em; }
 body > article {
   max-width: 100ch;
   margin: auto;
-  padding: 0 2ch 1em;
+  padding: 0 1ch 1em;
   /* For aside */
   position: relative;
 }
