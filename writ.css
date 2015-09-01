@@ -6,31 +6,54 @@
  * https://cmcenroe.me/writ/LICENSE (ISC)
  */
 
-/* Fonts & Colors: fonts chosen from http://www.cssfontstack.com */
+/* Fonts, sizes & vertical rhythm */
 
 body {
   font-family: Palatino, Georgia, Lucida Bright, Book Antiqua, serif;
   font-size: 16px;
-  color: #222;
 }
-
-* { line-height: 1.5em; }
-
-/* Wrapped headings should be slightly tighter */
-h1, h2, h3, h4, h5, h6 { line-height: 1.25em; }
 
 code, pre, samp, kbd {
   font-family: Consolas, Liberation Mono, Menlo, Courier, monospace;
-  color: #111;
+}
+kbd { font-weight: bold; }
+
+* { line-height: 1.5em; }
+
+p, ul, ol, dl, table, blockquote, pre { margin: 1.5rem 0 0; }
+ul ul, ol ol, ul ol, ol ul { margin: 0; }
+hr {
+  margin: 0;
+  padding-top: 1.5em;
+  border: none;
 }
 
-kbd { font-weight: bold; }
+/* Minor third */
+h1 { font-size: 2.488em; }
+h2 { font-size: 2.074em; }
+h3 { font-size: 1.728em; }
+h4 { font-size: 1.44em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1em; }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 1.5rem 0 0;
+}
+h1, h2, h3 { line-height: 3rem; }
+h4, h5, h6 { line-height: 1.5rem; }
+
+small { font-size: 0.833em; }
+
+/* Colors */
+
+body { color: #222; }
+code, pre, samp, kbd { color: #111; }
 
 /* Layout */
 
 body { margin: 0 1ch 1em; }
 
-body > header { margin: 0 1ch 3em; }
+body > header { margin: 0 0 3em; }
 
 body > main {
   /* Just in case */
@@ -65,36 +88,7 @@ body > main aside {
   border-left: solid 0.5ch #eee;
 }
 
-/* Copy Vertical Spacing */
-
-h1, h2, h3, h4, h5, h6 { margin: 0.75em 0 0; }
-
-p, ul, ol, dl, table, blockquote, pre { margin: 0.5em 0 0; }
-
-ul ul, ol ol, ul ol, ol ul { margin-top: 0; }
-
-/* With p margin, like a skipped line */
-hr { margin: 1.5em 0 0; }
-
-/* Font sizes */
-
-h1, h2, h3, h4, h5, h6 { font-weight: normal; }
-
-/* Minor third */
-h1 { font-size: 2.488em; }
-h2 { font-size: 2.074em; }
-h3 { font-size: 1.728em; }
-h4 { font-size: 1.44em; }
-h5 { font-size: 1.2em; }
-h6 { font-size: 1em; }
-
-small { font-size: 0.833em; }
-
 /* Copy Blocks */
-
-hr {
-  border: none;
-}
 
 blockquote {
   margin-right: 3ch;
@@ -157,8 +151,10 @@ table {
 }
 
 th, td {
-  padding: 3px;
+  padding: 0 0.5ch;
   border: solid 1px #ddd;
+  line-height: 1.438em;
+  font-weight: normal;
 }
 
 thead, tfoot {
