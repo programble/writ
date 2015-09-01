@@ -66,7 +66,7 @@ body > main {
 
 body > main figure {
   float: right;
-  margin: 0 0 0 1ch;
+  margin: 1.5rem 0 0 1ch;
 }
 
 body > main aside {
@@ -74,8 +74,7 @@ body > main aside {
   left: 100%;
   width: 26ch;
   padding: 0 1ch;
-  /* To align with p */
-  margin-top: 0.5em;
+  margin-top: 1.5rem;
 }
 
 /* Layout Visual */
