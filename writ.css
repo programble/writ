@@ -105,9 +105,10 @@ blockquote {
 }
 
 pre {
+  margin-bottom: -2px;
   border-width: 1px;
   border-radius: 2px;
-  padding: 5px;
+  padding: 0 0.5ch;
   overflow-x: auto;
 }
 pre code {
