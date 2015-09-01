@@ -11,22 +11,16 @@
 body {
   font-family: Palatino, Georgia, Lucida Bright, Book Antiqua, serif;
   font-size: 16px;
+  line-height: 1.5rem;
 }
 
 code, pre, samp, kbd {
   font-family: Consolas, Liberation Mono, Menlo, Courier, monospace;
+  font-size: 0.833rem;
 }
+
 kbd { font-weight: bold; }
-
-* { line-height: 1.5em; }
-
-p, ul, ol, dl, table, blockquote, pre { margin: 1.5rem 0 0; }
-ul ul, ol ol, ul ol, ol ul { margin: 0; }
-hr {
-  margin: 0;
-  padding-top: 1.5em;
-  border: none;
-}
+h1, h2, h3, h4, h5, h6, th { font-weight: normal; }
 
 /* Minor third */
 h1 { font-size: 2.488em; }
@@ -35,82 +29,81 @@ h3 { font-size: 1.728em; }
 h4 { font-size: 1.44em; }
 h5 { font-size: 1.2em; }
 h6 { font-size: 1em; }
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal;
+small { font-size: 0.833em; }
+
+h1, h2, h3 { line-height: 3rem; }
+
+p, ul, ol, dl, table, blockquote, pre, h1, h2, h3, h4, h5, h6 {
   margin: 1.5rem 0 0;
 }
-h1, h2, h3 { line-height: 3rem; }
-h4, h5, h6 { line-height: 1.5rem; }
+ul ul, ol ol, ul ol, ol ul { margin: 0; }
 
-small { font-size: 0.833em; }
+hr {
+  margin: 0;
+  border: none;
+  padding: 1.5rem 0 0;
+}
 
 /* Colors */
 
 body { color: #222; }
 code, pre, samp, kbd { color: #111; }
+a, nav a:visited { color: #00e; }
+a:visited { color: #60b; }
+mark { color: inherit; }
+
+code, pre, samp, thead, tfoot { background-color: #eee; }
+mark { background-color: #fe0; }
+
+main aside, blockquote, ins { border: solid #eee; }
+pre, code, samp, th, td { border: solid #ddd; }
 
 /* Layout */
 
-body { margin: 0 1ch 1em; }
+body { margin: 1.5rem 1ch; }
 
-body > header { margin: 0 0 3em; }
+body > header { text-align: center; }
 
-body > main {
-  /* Just in case */
-  display: block;
+main {
+  display: block; /* Just in case */
+  position: relative; /* For aside */
   max-width: 78ch;
   margin: auto;
-  /* For aside */
-  position: relative;
 }
 
-body > main figure {
+main figure {
   float: right;
   margin: 1.5rem 0 0 1ch;
 }
 
-body > main aside {
+main aside {
   position: absolute;
   left: 100%;
   width: 26ch;
+  margin: 1.5rem 0 0 -1ch;
+  border-width: 0 0 0 0.5ch;
   padding: 0 1ch;
-  margin-top: 1.5rem;
 }
 
-/* Layout Visual */
-
-body > header { text-align: center; }
-
-body > main aside {
-  /* To get border on screen when aside is off */
-  margin-left: -1ch;
-  border-left: solid 0.5ch #eee;
-}
-
-/* Copy Blocks */
+/* Copy blocks */
 
 blockquote {
   margin-right: 3ch;
-
   margin-left: 1.5ch;
-  border-left: solid 0.5ch #eee;
+  border-width: 0 0 0 0.5ch;
   padding: 0 0 0 1ch;
 }
 
 pre {
-  padding: 5px;
-  background-color: #eee;
-  border: solid 1px #ddd;
+  border-width: 1px;
   border-radius: 2px;
-  font-size: 0.833em;
-
+  padding: 5px;
   overflow-x: auto;
 }
 pre code {
-  padding: 0;
   border: none;
+  padding: 0;
   background-color: transparent;
-  font-size: inherit;
   white-space: inherit;
 }
 
@@ -119,7 +112,6 @@ img { max-width: 100%; }
 /* Lists */
 
 ul, ol, dd { padding: 0 0 0 3ch; }
-
 dd { margin: 0; }
 
 ul > li { list-style-type: disc; }
@@ -134,7 +126,6 @@ nav ul {
   padding: 0;
   list-style-type: none;
 }
-
 nav ul li {
   display: inline;
   padding-left: 1ch;
@@ -144,57 +135,37 @@ nav ul li {
 
 table {
   width: 100%;
-  overflow-x: auto;
-
   border-collapse: collapse;
+  overflow-x: auto;
 }
 
 th, td {
+  border-width: 1px;
   padding: 0 0.5ch;
-  border: solid 1px #ddd;
-  font-weight: normal;
 }
 
-thead, tfoot {
-  background-color: #eee;
-}
+/* Copy inline */
 
-/* Copy Inline */
-
-a {
-  text-decoration: none;
-  color: #00e;
-}
-
-a:visited { color: #60b; }
-
-/* Don't color visited nav links */
-nav a:visited { color: #00e; }
+a { text-decoration: none; }
 
 sup, sub {
   font-size: 0.75em;
-  /* To not mess up line spacing */
   line-height: 1em;
 }
 
 ins {
-  text-decoration: none;
+  border-width: 1px;
   padding: 1px;
-  border: solid 1px #eee;
-}
-
-code, samp {
-  padding: 0.1em 0.2em;
-  background-color: #eee;
-  border: solid 1px #ddd;
-  border-radius: 2px;
-  font-size: 0.833em;
-
-  white-space: nowrap;
+  text-decoration: none;
 }
 
 mark {
   padding: 1px;
-  background-color: #fe0;
-  color: inherit;
+}
+
+code, samp {
+  border-width: 1px;
+  border-radius: 2px;
+  padding: 0.1em 0.2em;
+  white-space: nowrap;
 }
