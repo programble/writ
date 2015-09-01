@@ -6,6 +6,10 @@
  * https://cmcenroe.me/writ/LICENSE (ISC)
  */
 
+/**/
+body { background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAAYCAYAAADQ+yzZAAAAAXNSR0IArs4c6QAAABJJREFUCB1jYBheoLy8/D/IRwAPlgJl/RmjngAAAABJRU5ErkJggg==); }
+/**/
+
 /* Fonts, sizes & vertical rhythm */
 
 body {
@@ -42,6 +46,12 @@ hr {
   margin: 0;
   border: none;
   padding: 1.5rem 0 0;
+}
+
+/* FIXME: Kind of hacky vertical rhythm for tables */
+table {
+  line-height: 1.438em;
+  margin-bottom: -1px;
 }
 
 /* Colors */
