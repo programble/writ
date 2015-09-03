@@ -134,6 +134,7 @@ nav ul li {
   display: inline;
   padding-left: 1ch;
 }
+nav ul li:first-child { padding-left: 0; }
 
 /* Tables */
 
