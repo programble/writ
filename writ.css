@@ -1,5 +1,5 @@
 /*!
- * Writ v1.0.0
+ * Writ v1.0.1
  *
  * Copyright © 2015, Curtis McEnroe <curtis@cmcenroe.me>
  *
@@ -134,6 +134,7 @@ nav ul li {
   display: inline;
   padding-left: 1ch;
 }
+nav ul li:first-child { padding-left: 0; }
 
 /* Tables */
 
