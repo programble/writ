@@ -1,132 +1,113 @@
 /*!
- * Writ v0.2.2
+ * Writ v1.0.0
  *
  * Copyright © 2015, Curtis McEnroe <curtis@cmcenroe.me>
  *
- * Permission to use, copy, modify, and/or distribute this software for any
- * purpose with or without fee is hereby granted, provided that the above
- * copyright notice and this permission notice appear in all copies.
- *
- * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
- * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
- * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
- * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
- * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
- * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
- * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
- *
+ * https://cmcenroe.me/writ/LICENSE (ISC)
  */
 
-/* Fonts & Colors: fonts chosen from http://www.cssfontstack.com */
+/* Fonts, sizes & vertical rhythm */
 
 body {
   font-family: Palatino, Georgia, Lucida Bright, Book Antiqua, serif;
-  font-size: 14px;
-  color: #222;
+  font-size: 16px;
+  line-height: 1.5rem;
 }
-
-* { line-height: 1.5em; }
-
-/* Wrapped headings should be slightly tighter */
-h1, h2, h3, h4, h5, h6 { line-height: 1.25em; }
 
 code, pre, samp, kbd {
   font-family: Consolas, Liberation Mono, Menlo, Courier, monospace;
-  color: #111;
+  font-size: 0.833rem;
 }
 
 kbd { font-weight: bold; }
+h1, h2, h3, h4, h5, h6, th { font-weight: normal; }
+
+/* Minor third */
+h1 { font-size: 2.488em; }
+h2 { font-size: 2.074em; }
+h3 { font-size: 1.728em; }
+h4 { font-size: 1.44em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1em; }
+small { font-size: 0.833em; }
+
+h1, h2, h3 { line-height: 3rem; }
+
+p, ul, ol, dl, table, blockquote, pre, h1, h2, h3, h4, h5, h6 {
+  margin: 1.5rem 0 0;
+}
+ul ul, ol ol, ul ol, ol ul { margin: 0; }
+
+hr {
+  margin: 0;
+  border: none;
+  padding: 1.5rem 0 0;
+}
+
+/* FIXME: Kind of hacky vertical rhythm for tables */
+table {
+  line-height: 1.438em;
+  margin-bottom: -1px;
+}
+
+/* Colors */
+
+body { color: #222; }
+code, pre, samp, kbd { color: #111; }
+a, nav a:visited { color: #00e; }
+a:visited { color: #60b; }
+mark { color: inherit; }
+
+code, pre, samp, thead, tfoot { background-color: rgba(0, 0, 0, 0.05); }
+mark { background-color: #fe0; }
+
+main aside, blockquote, ins { border: solid rgba(0, 0, 0, 0.05); }
+pre, code, samp { border: solid rgba(0, 0, 0, 0.1); }
+th, td { border: solid #dbdbdb; }
 
 /* Layout */
 
-body { margin: 0; }
-
-body > header { margin: 0 0 3em; }
-
-body > article {
-  max-width: 100ch;
-  margin: auto;
-  padding: 0 2ch 1em;
-  /* For aside */
-  position: relative;
-}
-
-body > article figure {
-  float: right;
-  margin: 0 0 0.5em 2ch;
-}
-
-body > article aside {
-  position: absolute;
-  left: 100%;
-  width: 25ch;
-  padding: 0 1ch;
-  /* To align with p */
-  margin-top: 0.5em;
-}
-
-/* Layout Visual */
+body { margin: 1.5rem 1ch; }
 
 body > header { text-align: center; }
 
-body > article aside {
-  /* To get border on screen when aside is off */
-  margin-left: -1ch;
-  border-left: solid 0.5ch #eee;
+main, body > footer {
+  display: block; /* Just in case */
+  max-width: 78ch;
+  margin: auto;
 }
 
-/* Copy Vertical Spacing */
-
-h1, h2, h3, h4, h5, h6 { margin: 0.75em 0 0; }
-
-p, ul, ol, dl, table, blockquote, pre { margin: 0.5em 0 0; }
-
-ul ul, ol ol { margin-top: 0; }
-
-/* With p margin, like a skipped line */
-hr { margin: 1.5em 0 0; }
-
-/* Font sizes */
-
-h1, h2, h3, h4, h5, h6 { font-weight: normal; }
-
-h1 { font-size: 2.25em;; }
-h2 { font-size: 1.75em; }
-h3 { font-size: 1.5em; }
-h4 { font-size: 1.25em; }
-h5 { font-size: 1.15em; }
-h6 { font-size: 1em; }
-
-small { font-size: 0.85em; }
-
-/* Copy Blocks */
-
-hr {
-  border: none;
+main figure, main aside {
+  float: right;
+  margin: 1.5rem 0 0 1ch;
 }
+
+main aside {
+  max-width: 26ch;
+  border-width: 0 0 0 0.5ch;
+  padding: 0 0 0 0.5ch;
+}
+
+/* Copy blocks */
 
 blockquote {
   margin-right: 3ch;
-
   margin-left: 1.5ch;
-  border-left: solid 0.5ch #eee;
+  border-width: 0 0 0 0.5ch;
   padding: 0 0 0 1ch;
 }
 
 pre {
-  padding: 5px;
-  background-color: #eee;
-  border: solid 1px #ddd;
+  margin-bottom: -2px;
+  border-width: 1px;
   border-radius: 2px;
-  font-size: 0.85em;
-
+  padding: 0 0.5ch;
   overflow-x: auto;
 }
 pre code {
-  padding: 0;
   border: none;
+  padding: 0;
   background-color: transparent;
-  font-size: inherit;
   white-space: inherit;
 }
 
@@ -135,22 +116,20 @@ img { max-width: 100%; }
 /* Lists */
 
 ul, ol, dd { padding: 0 0 0 3ch; }
-
 dd { margin: 0; }
 
-ul li { list-style-type: disc; }
-ul li li { list-style-type: circle; }
-ul li li li { list-style-type: square; }
+ul > li { list-style-type: disc; }
+li ul > li { list-style-type: circle; }
+li li ul > li { list-style-type: square; }
 
-ol li { list-style-type: decimal; }
-ol li li { list-style-type: lower-roman; }
-ol li li li { list-style-type: lower-alpha; }
+ol > li { list-style-type: decimal; }
+li ol > li { list-style-type: lower-roman; }
+li li ol > li { list-style-type: lower-alpha; }
 
 nav ul {
   padding: 0;
   list-style-type: none;
 }
-
 nav ul li {
   display: inline;
   padding-left: 1ch;
@@ -160,59 +139,37 @@ nav ul li {
 
 table {
   width: 100%;
-  overflow-x: auto;
-
   border-collapse: collapse;
+  overflow-x: auto;
 }
 
 th, td {
-  padding: 3px;
-  border: solid 1px #ddd;
+  border-width: 1px;
+  padding: 0 0.5ch;
 }
 
-thead, tfoot {
-  background-color: #eee;
-}
+/* Copy inline */
 
-/* Copy Inline */
-
-a {
-  text-decoration: none;
-  color: #00e;
-}
-
-a:visited { color: #60b; }
-
-/* Don't color visited nav links */
-nav a:visited { color: #00e; }
-
-/* Smallcaps */
-abbr { font-size: 2ex; }
+a { text-decoration: none; }
 
 sup, sub {
   font-size: 0.75em;
-  /* To not mess up line spacing */
   line-height: 1em;
 }
 
 ins {
-  text-decoration: none;
+  border-width: 1px;
   padding: 1px;
-  border: solid 1px #eee;
-}
-
-code, samp {
-  padding: 0.1em 0.2em;
-  background-color: #eee;
-  border: solid 1px #ddd;
-  border-radius: 2px;
-  font-size: 0.85em;
-
-  white-space: nowrap;
+  text-decoration: none;
 }
 
 mark {
   padding: 1px;
-  background-color: #fe0;
-  color: inherit;
+}
+
+code, samp {
+  border-width: 1px;
+  border-radius: 2px;
+  padding: 0.1em 0.2em;
+  white-space: nowrap;
 }
