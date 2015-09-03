@@ -58,11 +58,12 @@ a, nav a:visited { color: #00e; }
 a:visited { color: #60b; }
 mark { color: inherit; }
 
-code, pre, samp, thead, tfoot { background-color: #eee; }
+code, pre, samp, thead, tfoot { background-color: rgba(0, 0, 0, 0.05); }
 mark { background-color: #fe0; }
 
-main aside, blockquote, ins { border: solid #eee; }
-pre, code, samp, th, td { border: solid #ddd; }
+main aside, blockquote, ins { border: solid rgba(0, 0, 0, 0.05); }
+pre, code, samp { border: solid rgba(0, 0, 0, 0.1); }
+th, td { border: solid #dbdbdb; }
 
 /* Layout */
 
