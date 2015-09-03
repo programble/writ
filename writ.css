@@ -73,23 +73,19 @@ body > header { text-align: center; }
 
 main, body > footer {
   display: block; /* Just in case */
-  position: relative; /* For aside */
   max-width: 78ch;
   margin: auto;
 }
 
-main figure {
+main figure, main aside {
   float: right;
   margin: 1.5rem 0 0 1ch;
 }
 
 main aside {
-  position: absolute;
-  left: 100%;
-  width: 26ch;
-  margin: 1.5rem 0 0 -1ch;
+  max-width: 26ch;
   border-width: 0 0 0 0.5ch;
-  padding: 0 1ch;
+  padding: 0 0 0 0.5ch;
 }
 
 /* Copy blocks */
