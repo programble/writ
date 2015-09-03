@@ -71,7 +71,7 @@ body { margin: 1.5rem 1ch; }
 
 body > header { text-align: center; }
 
-main {
+main, body > footer {
   display: block; /* Just in case */
   position: relative; /* For aside */
   max-width: 78ch;
