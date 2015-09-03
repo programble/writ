@@ -26,12 +26,16 @@ Writ is served through the CloudFlare CDN.
 <abbr>HTML</abbr> is super easy to write. Markdown is even easier to write and
 generate <abbr>HTML</abbr> from. But what does it look like?
 
-![Default Styles](screenshot/default.png)
+<p style="text-align: center;">
+  <img alt="Default styles" width="285" src="screenshot/default.png">
+</p>
 
 Not very nice, and it gets worse the more there is. Applying the Writ
 stylesheet makes it better.
 
-![Writ Styles](screenshot/writ.png)
+<p style="text-align: center;">
+  <img alt="Writ styles" width="285" src="screenshot/writ.png">
+</p>
 
 ## Caveats
 
