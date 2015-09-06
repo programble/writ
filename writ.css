@@ -8,7 +8,7 @@
 
 /* Fonts, sizes & vertical rhythm */
 
-body {
+html {
   font-family: Palatino, Georgia, Lucida Bright, Book Antiqua, serif;
   font-size: 16px;
   line-height: 1.5rem;
