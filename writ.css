@@ -136,6 +136,7 @@ nav ul {
 nav ul li {
   display: inline;
   padding-left: 1ch;
+  white-space: nowrap;
 }
 nav ul li:first-child { padding-left: 0; }
 
