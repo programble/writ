@@ -44,9 +44,9 @@ hr {
   padding: 1.5rem 0 0;
 }
 
-/* FIXME: Kind of hacky vertical rhythm for tables */
 table {
-  line-height: 1.438em;
+  /* Accounting for borders */
+  line-height: calc(1.5rem - 1px);
   margin-bottom: -1px;
 }
 
