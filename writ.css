@@ -1,5 +1,5 @@
 /*!
- * Writ v1.0.1
+ * Writ v1.0.2
  *
  * Copyright © 2015, Curtis McEnroe <curtis@cmcenroe.me>
  *
@@ -8,7 +8,7 @@
 
 /* Fonts, sizes & vertical rhythm */
 
-body {
+html {
   font-family: Palatino, Georgia, Lucida Bright, Book Antiqua, serif;
   font-size: 16px;
   line-height: 1.5rem;
@@ -44,9 +44,13 @@ hr {
   padding: 1.5rem 0 0;
 }
 
-/* FIXME: Kind of hacky vertical rhythm for tables */
+/* Accounting for borders */
 table {
-  line-height: 1.438em;
+  line-height: calc(1.5rem - 1px);
+  margin-bottom: -1px;
+}
+pre {
+  margin-top: calc(1.5rem - 1px);
   margin-bottom: -1px;
 }
 
@@ -98,7 +102,6 @@ blockquote {
 }
 
 pre {
-  margin-bottom: -2px;
   border-width: 1px;
   border-radius: 2px;
   padding: 0 0.5ch;
@@ -133,6 +136,7 @@ nav ul {
 nav ul li {
   display: inline;
   padding-left: 1ch;
+  white-space: nowrap;
 }
 nav ul li:first-child { padding-left: 0; }
 

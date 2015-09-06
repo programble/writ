@@ -8,10 +8,14 @@ Opinionated, classless styles for semantic HTML.
 <!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="//writ.cmcenroe.me/1.0.1/writ.min.css">
+<link rel="stylesheet" href="//writ.cmcenroe.me/1.0.2/writ.min.css">
 ```
 
+[Full template][template]
+
 Writ is served through the CloudFlare CDN.
+
+[template]: template.html
 
 ## Goals
 
