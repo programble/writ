@@ -71,40 +71,40 @@ th, td { border: solid #dbdbdb; }
 
 /* Layout */
 
-body { margin: 1.5rem 1ch; }
+body { margin: 1.5rem .5rem; }
 
 body > header { text-align: center; }
 
 main, body > footer {
   display: block; /* Just in case */
-  max-width: 78ch;
+  max-width: 39rem;
   margin: auto;
 }
 
 main figure, main aside {
   float: right;
-  margin: 1.5rem 0 0 1ch;
+  margin: 1.5rem 0 0 0.5rem;
 }
 
 main aside {
-  max-width: 26ch;
-  border-width: 0 0 0 0.5ch;
-  padding: 0 0 0 0.5ch;
+  max-width: 13rem;
+  border-width: 0 0 0 0.25rem;
+  padding: 0 0 0 0.25rem;
 }
 
 /* Copy blocks */
 
 blockquote {
-  margin-right: 3ch;
-  margin-left: 1.5ch;
-  border-width: 0 0 0 0.5ch;
-  padding: 0 0 0 1ch;
+  margin-right: 1.5rem;
+  margin-left: 0.775rem;
+  border-width: 0 0 0 0.25rem;
+  padding: 0 0 0 0.5rem;
 }
 
 pre {
   border-width: 1px;
   border-radius: 2px;
-  padding: 0 0.5ch;
+  padding: 0 0.25rem;
   overflow-x: auto;
 }
 pre code {
@@ -118,7 +118,7 @@ img { max-width: 100%; }
 
 /* Lists */
 
-ul, ol, dd { padding: 0 0 0 3ch; }
+ul, ol, dd { padding: 0 0 0 1.5rem; }
 dd { margin: 0; }
 
 ul > li { list-style-type: disc; }
@@ -135,7 +135,7 @@ nav ul {
 }
 nav ul li {
   display: inline;
-  padding-left: 1ch;
+  padding-left: 0.5rem;
   white-space: nowrap;
 }
 nav ul li:first-child { padding-left: 0; }
@@ -150,7 +150,7 @@ table {
 
 th, td {
   border-width: 1px;
-  padding: 0 0.5ch;
+  padding: 0 0.775;
 }
 
 /* Copy inline */
