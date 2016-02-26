@@ -71,7 +71,7 @@ th, td { border: solid #dbdbdb; }
 
 /* Layout */
 
-body { margin: 1.5rem .5rem; }
+body { margin: 1.5rem 0.5rem; }
 
 body > header { text-align: center; }
 
