@@ -8,7 +8,7 @@ Opinionated, classless styles for semantic HTML.
 <!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="//writ.cmcenroe.me/1.0.2/writ.min.css">
+<link rel="stylesheet" href="//writ.cmcenroe.me/1.0.3/writ.min.css">
 ```
 
 [Full template][template]
