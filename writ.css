@@ -58,7 +58,7 @@ pre {
 
 body { color: #222; }
 code, pre, samp, kbd { color: #111; }
-a, nav a:visited { color: #00e; }
+a, header nav a:visited { color: #00e; }
 a:visited { color: #60b; }
 mark { color: inherit; }
 
