@@ -1,5 +1,5 @@
 /*!
- * Writ v1.0.3
+ * Writ v1.0.4
  *
  * Copyright © 2015, Curtis McEnroe <curtis@cmcenroe.me>
  *
@@ -58,8 +58,8 @@ pre {
 
 body { color: #222; }
 code, pre, samp, kbd { color: #111; }
-a, header nav a:visited { color: #00e; }
-a:visited { color: #60b; }
+a, header nav a:visited, a code { color: #00e; }
+a:visited, a:visited code { color: #60b; }
 mark { color: inherit; }
 
 code, pre, samp, thead, tfoot { background-color: rgba(0, 0, 0, 0.05); }
